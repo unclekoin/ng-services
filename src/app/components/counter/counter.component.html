@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">App Counter</h5>
+    <p class="card-text">{{ appCounterService.counter }}</p>
+    <div class="btn-group">
+      <button
+        (click)="appCounterService.increase()"
+        class="btn btn-outline-primary">
+        Increase
+      </button>
+      <button
+        (click)="appCounterService.decrease()"
+        class="btn btn-outline-primary">
+        Decrease
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Local Counter</h5>
+      <p class="card-text">{{ localCounterService.counter }}</p>
+      <div class="btn-group">
+        <button
+          (click)="localCounterService.increase()"
+          class="btn btn-outline-primary">
+          Increase
+        </button>
+        <button
+          (click)="localCounterService.decrease()"
+          class="btn btn-outline-primary">
+          Decrease
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
